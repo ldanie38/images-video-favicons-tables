@@ -8,6 +8,8 @@
         <meta name="description" content="Practice with images, video, svgs, favicons, and tables for G.I.T. 215">
 
         <!-- A FAVICON -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <!-- TO DO: add the favicon here -->
 
         <!-- GOOGLE FONTS LINKS -->
@@ -94,10 +96,16 @@
 
                 <section>
                     <h3><span>&#10033;&nbsp;</span> Using HTML5 to Add a Video</h3>
-                    <p>The video that we will embed below is included in the video folder of this project. Your zyBook explains how these tags work in detail, but today we'll write some minimum code to get the video to display on our page. Below, we'll add the video from the video folder in the project. Include the attribute that will display controls for the video, and set the width.</p>
+                    <p>The video that we will embed below is included in the video folder of this project. 
+                    Your zyBook explains how these tags work in detail, but today we'll write some minimum code to get the video to display on our page.
+                    Below, we'll add the video from the video folder in the project. Include the attribute that will display controls for the video, and set the width.</p>
                     
                     <!-- TO DO: Add the video from the files below using HTML5 -->
-                     <iframe src="" width="425" height="240"></iframe>
+                     <video controls width="425">
+                        <source src="video/video.mp4" type="video/mp4">
+                        Your browser doesnt support this video format
+                     </video>
+                     
 
                     <a href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/" class="credit">Video by Caleb Oquendo</a>
                 </section>
@@ -105,7 +113,7 @@
                 <section>
                     <h3><span>&#10033;&nbsp;</span> Adding Video From YouTube</h3>
                     <p>Adding a video from YouTube is as simple as copying and pasting some code. YouTube videos include embed code under the share menu for each video. Once it is open, you can choose to set some options or just copy the code and paste it into your HTML. YouTube uses a tag called an <code>iframe</code> to hold their videos. These can render more than just videos, though, including an entire web page.</p>
-                    <! -- This video can be found here: https://www.youtube.com/watch?v=k9DZp16uNQk&list=RDk9DZp16uNQk&start_radio=1 I did remove the autoplay and frameborder attributes from the given code -->
+                   
                     <iframe width="425" height="240" src="https://www.youtube.com/embed/k9DZp16uNQk" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </section>
             </section>
@@ -127,7 +135,8 @@
                 <p>In HTML, tables are used for tabular data. Think of data similar to a schedule or what you might find easier to read in a spreadsheet format. Tables can cause issues on smaller screens, as they aren't responsive, so consider that if you add them to a page. If they will be small enough to fit on the screen, even with their data, you should be fine.</p>
                 <table>
                     <!-- TO DO: Complete the code below to create a caption for this table -->
-                    Hours of Operation
+                     <caption>Hours of Operation</caption>
+                    
 
                     <thead>
                         <tr>
@@ -148,7 +157,7 @@
 
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell that will span all columns -->
-                        <!-- Wednesday - <span class="bold">Closed</span> -->
+                        <td colspan="2">Wednesday - <span class="bold">Closed</span></td>
                     </tr>
 
                     <tr>
@@ -169,7 +178,7 @@
 
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell containing that text -->
-                        <!-- Sunday -->
+                        <td>Sunday</td>
                     </tr>
                 </table>
             </section>
@@ -181,6 +190,10 @@
                 <h2>Follow&nbsp;Us&nbsp;on Social&nbsp;Media</h2>
 
                 <a href="#" aria-label="find us on facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                        <path d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z"></path>
+                        <path d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z"></path>
+                      </svg>
                     <!-- TO DO: go to the tabler icons site, search for the icon for Facebook, and copy and paste the SVG code below -->
                 </a>
                 
